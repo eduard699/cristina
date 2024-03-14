@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Esta princesita quiere ser mi novia?</title>
+    <style>
+        .body {
+            background-color: pink;
+            text-align: center;
+        }
+
+        .body_title{
+            color:white;
+        }   
+        
+        .body_img{
+            width: 100%;
+            border-radius: 50%;
+            text-align: center;
+        }  
+        
+         .yes{
+            text-align: center;
+        }    
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">¿Esta princesita quiere ser mi novia?</h1>
+    <img src="https://www.hollywoodreporter.com/wp-content/uploads/2016/05/gettyimages-500815524-p_2016.jpg?w=1024" alt="Er haRRy" class="body_img">
+    <button id="yes">Obvio que si mai lov</button>
+    <button id="no">No CarA de ano</button>
+    <script>
+        const vutonsi = document.getElementById('yes');
+        const vutonNO = document.getElementById('no');
+    
+
+        const zomozNobios = () =>{
+            alert('AHORA ZOMOS NOVIOS JIJIJIJIJIJIJIJIJIJIJIJ sabias que dirias que si');
+            alert('NUesTra VoDa va ser mañana');
+        };
+
+        const NOMEDEJES = () => {
+            vutonNO.style.position = 'absolute';
+            vutonNO.style.top =(Math.random() * window.innerHeight) + 'px';
+            vutonNO.style.left =(Math.random() * window.innerWidth) + 'px';
+        };
+
+        vutonsi.addEventListener('click', zomozNobios);
+        vutonNO.addEventListener('mouseover', NOMEDEJES,)
+    </script>
+</body>
+</html>
